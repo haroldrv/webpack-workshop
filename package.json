@@ -1,0 +1,52 @@
+{
+  "name": "webpack-workshop",
+  "version": "1.0.0",
+  "description": "Source code for the Front end masters' Webpack 4 course",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "prod": "npm run webpack -- --env.mode production",
+    "dev": "npm run webpack-dev-server -- --env.mode development",
+    "prod:debug": "npm run debug -- --env.mode production",
+    "dev:debug": "npm run debug -- --env.mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haroldrv/webpack-workshop.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Harold Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haroldrv/webpack-workshop/issues"
+  },
+  "homepage": "https://github.com/haroldrv/webpack-workshop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.0-beta",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "postcss-loader": "^2.1.5",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.2.0",
+    "typescript": "^3.1.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.8.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-node-externals": "^1.7.2",
+    "workbox-webpack-plugin": "^3.2.0"
+  }
+}
